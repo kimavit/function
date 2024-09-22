@@ -14,3 +14,13 @@ fill = input()
 base = int(input())
 draw_triangle(fill, base)
 ````
+````ruby
+def print_digit_sum(num):
+    cnt = 0
+    while num != 0:
+        cnt += num % 10
+        num = num//10
+    print (cnt)
+n =int(input())
+print_digit_sum(n)
+````
