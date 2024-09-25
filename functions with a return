@@ -1,0 +1,14 @@
+def find_all(target, symbol):
+    list = []
+    cnt = 0
+    for i in target:
+        if i == symbol:
+            list.append(cnt)
+        cnt += 1
+    return list
+
+
+s = input()
+char = input()
+
+print(find_all(s, char))
