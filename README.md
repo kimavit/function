@@ -24,3 +24,17 @@ def print_digit_sum(num):
 n =int(input())
 print_digit_sum(n)
 ````
+````ruby
+def is_prime(num):
+    if num == 1:
+        return False
+    for i in range (2, num):
+        if  num % i == 0:
+            return False
+    else:
+        return True
+
+n = int(input())
+
+print(is_prime(n))
+````
