@@ -38,3 +38,23 @@ n = int(input())
 
 print(is_prime(n))
 ````
+````ruby
+def is_one_away(word1, word2):
+    if len(word1) != len(word2):
+        return False
+    cnt = 0
+    for j in range (len(word1)):
+        if word1[j] != word2[j] :
+            cnt += 1
+    if cnt == 0:
+        return False
+    if cnt >= 2:
+        return False
+    return True
+
+
+txt1 = input()
+txt2 = input()
+ 
+print(is_one_away(txt1, txt2))
+````
