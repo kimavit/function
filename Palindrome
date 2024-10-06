@@ -1,0 +1,14 @@
+def is_palindrome(text):
+    text1 = ''.join(i.lower() for i in text if i.isalpha())
+    text2 = text1[::-1]
+    if text1== text2:
+        return True
+    if text1 != text2:
+        return False
+
+
+
+txt = input()
+
+
+print(is_palindrome(txt))
