@@ -1,0 +1,11 @@
+def convert_to_python_case(text):
+    new_txt = []
+    for i in range(len(text)):
+        if text[i].isupper():
+            new_txt.append('_')
+        if text[i].lower():
+            new_txt.append(text[i].lower())
+    return ''.join(new_txt[1:])
+txt = input()
+
+print(convert_to_python_case(txt))
